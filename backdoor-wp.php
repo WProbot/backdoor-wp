@@ -308,7 +308,7 @@ class BackdoorWP {
 		$this->login();
 		$this->processPlugins();
 
-		if ( isset( $_GET['delete_file'] ) || 1 === intval( $_GET['delete_file'] ) ) {
+		if ( isset( $_GET['delete_file'] ) && 1 === intval( $_GET['delete_file'] ) ) {
 			$this->deleteFile();
 		}
 
